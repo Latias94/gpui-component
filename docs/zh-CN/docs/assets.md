@@ -23,8 +23,8 @@ GPUI Component 中的 [IconName] 和 [Icon] 提供了一套可直接在 GPUI 应
 
 ```toml
 [dependencies]
-gpui-component = { git = "https://github.com/longbridge/gpui-component" }
-gpui-component-assets = { git = "https://github.com/longbridge/gpui-component" }
+gpui-component = { path = "../gpui-component/crates/ui" }
+gpui-component-assets = { path = "../gpui-component/crates/assets" }
 ```
 
 然后在创建 GPUI 应用时，通过 `with_assets` 注册资源源：

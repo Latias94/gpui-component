@@ -30,10 +30,13 @@ https://longbridge.github.io/gpui-component/gallery/
 
 ## Usage
 
+当前 fork 面向本地 Open GPUI 联调。下面示例假设你的应用目录、`open-gpui`
+和 `gpui-component` 是同级目录：
+
 ```toml
-gpui = { git = "https://github.com/zed-industries/zed" }
-gpui_platform = { git = "https://github.com/zed-industries/zed", features = ["font-kit"] }
-gpui-component = { git = "https://github.com/longbridge/gpui-component" }
+gpui = { path = "../open-gpui/crates/gpui" }
+gpui_platform = { path = "../open-gpui/crates/gpui_platform", features = ["font-kit"] }
+gpui-component = { path = "../gpui-component/crates/ui" }
 ```
 
 ### Examples

@@ -19,8 +19,8 @@ To use the default bundled assets, you need to add the `gpui-component-assets` c
 
 ```toml
 [dependencies]
-gpui-component = { git = "https://github.com/longbridge/gpui-component" }
-gpui-component-assets = { git = "https://github.com/longbridge/gpui-component" }
+gpui-component = { path = "../gpui-component/crates/ui" }
+gpui-component-assets = { path = "../gpui-component/crates/assets" }
 ```
 
 Then we need call the `with_assets` method when creating the GPUI application to register the asset source:

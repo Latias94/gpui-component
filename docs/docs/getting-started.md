@@ -12,11 +12,11 @@ Add dependencies to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-gpui = { git = "https://github.com/zed-industries/zed" }
-gpui_platform = { git = "https://github.com/zed-industries/zed", features = ["font-kit"] }
-gpui-component = { git = "https://github.com/longbridge/gpui-component" }
+gpui = { path = "../open-gpui/crates/gpui" }
+gpui_platform = { path = "../open-gpui/crates/gpui_platform", features = ["font-kit"] }
+gpui-component = { path = "../gpui-component/crates/ui" }
 # Optional, for default bundled assets
-gpui-component-assets = { git = "https://github.com/longbridge/gpui-component" }
+gpui-component-assets = { path = "../gpui-component/crates/assets" }
 anyhow = "1.0"
 ```
 

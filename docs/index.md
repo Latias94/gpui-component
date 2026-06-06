@@ -24,14 +24,14 @@ Button::new("ok")
 
 Add the following to your `Cargo.toml`:
 
-GPUI and GPUI Component are under active development, recently GPUI have some new features not published on crates.io, so we recommend using the git version for now.
+Open GPUI and GPUI Component are under active development. Until stable git or crates.io releases are available, use local path dependencies against sibling Open GPUI and GPUI Component checkouts.
 
-The documentation on this site are based on the **Git main branch**, if you use the crates.io version, there may be some differences.
+The documentation on this site is based on the **Git main branch**. If you use the crates.io version, there may be some differences.
 
 ```toml
-gpui = { git = "https://github.com/zed-industries/zed" }
-gpui_platform = { git = "https://github.com/zed-industries/zed", features = ["font-kit"] }
-gpui-component = { git = "https://github.com/longbridge/gpui-component" }
+gpui = { path = "../open-gpui/crates/gpui" }
+gpui_platform = { path = "../open-gpui/crates/gpui_platform", features = ["font-kit"] }
+gpui-component = { path = "../gpui-component/crates/ui" }
 ```
 
 ## Hello World

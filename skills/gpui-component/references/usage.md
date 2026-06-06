@@ -8,10 +8,10 @@
 
 ```toml
 [dependencies]
-gpui = { git = "https://github.com/zed-industries/zed" }
-gpui_platform = { git = "https://github.com/zed-industries/zed", features = ["font-kit"] }
-gpui-component = { git = "https://github.com/longbridge/gpui-component" }
-gpui-component-assets = { git = "https://github.com/longbridge/gpui-component" } # optional icons
+gpui = { path = "../open-gpui/crates/gpui" }
+gpui_platform = { path = "../open-gpui/crates/gpui_platform", features = ["font-kit"] }
+gpui-component = { path = "../gpui-component/crates/ui" }
+gpui-component-assets = { path = "../gpui-component/crates/assets" } # optional icons
 ```
 
 ### 2. Initialization

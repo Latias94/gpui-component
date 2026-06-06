@@ -29,8 +29,8 @@ Add `gpui` and `gpui-component` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-gpui = { git = "https://github.com/zed-industries/zed" }
-gpui-component = { git = "https://github.com/longbridge/gpui-component" }
+gpui = { path = "../open-gpui/crates/gpui" }
+gpui-component = { path = "../gpui-component/crates/ui" }
 ```
 
 Then create a simple "Hello, World!" application with a button:
